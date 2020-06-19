@@ -259,10 +259,6 @@
             }
         },
         watch: {
-            image:function(val){
-            console.log("2131");
-            this.BannerImageAdded();
-            },
             content: function () {
                 this.content = this
                     .content
@@ -390,7 +386,12 @@
             })
             }
     },
-   
+    watch:{
+        image:function(val){
+            console.log("2131");
+            this.BannerImageAdded();
+        }
+    }
 }
 </script>
 <style>
